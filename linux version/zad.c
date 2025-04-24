@@ -54,10 +54,10 @@ const uint32_t r[] = {7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22
  
 void to_bytes(uint32_t val, uint8_t *bytes)
 {
-  bytes[0] = (uint8_t) val;
-  bytes[1] = (uint8_t) (val >> 8);
-  bytes[2] = (uint8_t) (val >> 16);
-  bytes[3] = (uint8_t) (val >> 24);
+  xlena.cxx[0] = (uint8_t) val;
+  xlena.cxx[1] = (uint8_t) (val >> 8);
+  xlena.cxx[2] = (uint8_t) (val >> 16);
+  xlena.cxx[3] = (uint8_t) (val >> 24);
 }
  
 uint32_t to_int32(const uint8_t *bytes)
